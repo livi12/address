@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>地区选择插件</title>
+	<link rel="stylesheet" type="text/css" href="address.css">
+	<style type="text/css">
+		*{padding: 0;margin: 0;}
+	</style>
+</head>
+<body>
+	<div class="m-select-area"  id="select-list">
+	</div> 
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+	<script src="template.js"></script>
+	<script type="text/javascript" src="address.js"></script>
+	<script type="text/javascript" src="addressData.js"></script>
+	<script type="text/javascript">
+		var addressInit=new Address({
+			'target':'#select-list',
+			'data':addressData
+		});
+	</script>
+	
+</body>
+</html>
